@@ -8,7 +8,7 @@ function ProductosContainer({functionCarrito}){
     const [error, setError] = useState(null);
 
     {useEffect(() => {
-        fetch('https://682e345e746f8ca4a47c3dff.mockapi.io/plantas')
+        fetch('https://682e345e746f8ca4a47c3dff.mockapi.io/plantasproductos')
             .then((respuesta) =>
                 respuesta.json()
             )

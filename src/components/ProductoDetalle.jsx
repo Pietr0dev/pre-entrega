@@ -17,7 +17,7 @@ function ProductoDetalle({}) {
   console.log(id)
 
   useEffect(() => {
-    fetch("https://682e345e746f8ca4a47c3dff.mockapi.io/plantas")
+    fetch("https://682e345e746f8ca4a47c3dff.mockapi.io/plantasproductos")
       .then((res) => res.json())
       .then((datos) => {
         const productoEncontrado = datos.find((item) => item.id === id);
